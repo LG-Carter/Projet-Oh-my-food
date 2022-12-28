@@ -55,6 +55,7 @@ body {
 .btn-resto:hover {
   transform: scale(1.1);
   box-shadow: 0 5px 10px #99E2D0;
+  background: linear-gradient(170deg, #fb8edc, #a274d9);
 }
 
 .commander {
@@ -157,6 +158,9 @@ body {
 .section-fonctionnement .fonctionnement .section_div:hover {
   transform: scale(1.1);
   box-shadow: 2px 3px 10px #99E2D0;
+}
+.section-fonctionnement .fonctionnement .section_div:hover .btn__color {
+  color: #9356DC;
 }
 @media all and (min-width: 993px) {
   .section-fonctionnement .fonctionnement .section_div {
