@@ -1,0 +1,29 @@
+footer {
+    color: white;
+    background-color: black;
+    padding: 20px 0 30px 40px;
+    font-size: 1em;
+
+    ul {
+        list-style-type: none;
+
+        @media all and (min-width: 993px) {
+            display: flex;
+            gap: 10px;
+        }
+
+        li {
+            margin-bottom: 0.6em;
+
+            a {
+                text-decoration: none;
+                color: white;
+            }
+        }
+    }
+
+    h2 {
+        margin-bottom: 15px;
+        font-family: $police-title;
+    }
+}

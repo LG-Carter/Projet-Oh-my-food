@@ -1,0 +1,11 @@
+{
+  "name": "projet-oh-my-food",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/style.scss:./Css/style.css"
+  },
+  "author": "",
+  "license": "ISC"
+}

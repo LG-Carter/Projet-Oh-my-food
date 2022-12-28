@@ -1,0 +1,149 @@
+.main__div-img {
+  position: relative;
+
+  img {
+    width: 100%;
+    height: 18rem;
+    object-fit: cover;
+  }
+}
+
+.section_div-tous-les-menus .heart {
+  @media all and (min-width: 993px) {
+    right: 2em;
+  }
+}
+
+.titre-coeur .title-coeur {
+  font-family: $police-title;
+  font-size: 1.2em;
+  display: block;
+  margin-top: -14px;
+}
+
+.titre-coeur h1 {
+  @media all and (min-width: 993px) {
+    margin-left: 2em;
+  }
+}
+
+
+.section_div-tous-les-menus {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  border-radius: 40px 40px 0 0;
+  margin-top: -63px;
+  background-color: $color-background;
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+}
+
+.container {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  border-radius: 20px;
+  margin-bottom: 1em;
+  box-shadow: $ombre;
+  opacity: 0;
+
+  .plat-bold {
+    display: block;
+    font-weight: 800;
+  }
+
+  .plat {
+    display: block;
+    margin: 5px;
+  }
+
+  .prix {
+    display: block;
+    margin-top: 40px;
+    font-weight: 800;
+  }
+
+  .item1 {
+    width: 80%;
+    height: 70px;
+    padding: 15px;
+    border-radius: 20px 0 0 20px;
+    background-color: white;
+    transition: all 500ms;
+
+    .plat-bold,
+    .plat {
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+  }
+
+  .item2 {
+    width: 20%;
+    height: 70px;
+    border-radius: 0 20px 20px 0;
+    background-color: white;
+    text-align: center;
+  }
+
+  .item3 {
+    width: 0;
+    height: 70px;
+    background-color: $color-tertiary;
+    color: white;
+    @include centrer;
+  }
+
+  .anim-check {
+    display: none;
+  }
+}
+
+.plat {
+  font-size: $size-ptxt;
+  font-family: $police-txt;
+  font-weight: 300;
+}
+
+.plat-bold {
+  font-size: $size-txt;
+  font-family: $police-txt;
+}
+
+hr {
+  width: 4.3em;
+  margin-left: 0;
+  padding: 2px 0 2px 0;
+  background-color: $color-tertiary;
+  margin-bottom: 1em;
+  border-style: none;
+}
+
+.entrees__h2 {
+  margin-bottom: 0;
+  font-weight: 200;
+  font-family: $police-txt;
+}
+
+.entrees {
+  margin-bottom: 3em;
+}
+
+.menu {
+  @media all and (min-width: 993px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
+}
+
+.entrees {
+  @media all and (min-width: 993px) {
+    margin: 25px;
+    width: 28%;
+  }
+}

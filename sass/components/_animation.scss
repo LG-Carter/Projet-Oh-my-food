@@ -1,0 +1,190 @@
+.heart {
+  position: absolute;
+  top: 25px;
+  font-size: 1.5em;
+  right: 25px;
+}
+
+.heart--full {
+  position: absolute;
+  top: 1px;
+  left: 0;
+  background: linear-gradient(170deg, #FF79DA, #9356DC);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  opacity: 0;
+  transition: all 500ms;
+
+  &:hover {
+    opacity: 1;
+    transform: scale(1.05);
+  }
+}
+
+.container:hover .item1 {
+  animation: slide 500ms linear forwards;
+
+  @media all and (min-width: 993px) {
+    &:hover {
+      animation: slide 500ms linear forwards;
+    }
+  }
+}
+
+.container:hover .item2 {
+  border-radius: 0;
+}
+
+
+.container:hover .item3 {
+  border-radius: 0 20px 20px 0;
+  animation: slide2 500ms linear forwards;
+
+  @media all and (min-width: 993px) {
+    &:hover {
+      border-radius: 0 20px 20px 0;
+      animation: slide2 500ms linear forwards;
+    }
+  }
+}
+
+.container:hover .anim-check {
+  display: block;
+  animation: spin 500ms linear forwards;
+
+  @media all and (min-width: 993px) {
+    &:hover {
+      display: block;
+      animation: spin 500ms linear forwards
+    }
+  }
+}
+
+.loader {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background-color: azure;
+  opacity: 0.9;
+  z-index: 2;
+  transition: all 5s;
+  animation: loader 10s forwards;
+
+  .loader__icone {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 4em;
+    transform: translate(-50%, -50%);
+    animation: rotate__icone 3s infinite;
+  }
+}
+
+.container-1 {
+  animation: apparition 1s forwards;
+}
+
+.container-2 {
+  animation: apparition 1s 0.25s forwards;
+}
+
+.container-3 {
+  animation: apparition 1s 0.5s forwards;
+}
+
+.container-4 {
+  animation: apparition 1s 0.75s forwards;
+}
+
+.container-5 {
+  animation: apparition 1s 1s forwards;
+}
+
+.container-6 {
+  animation: apparition 1s 1.25s forwards;
+}
+
+.container-7 {
+  animation: apparition 1s 1.5s forwards;
+}
+
+.container-8 {
+  animation: apparition 1s 1.75s forwards;
+}
+
+.container-9 {
+  animation: apparition 1s 2s forwards;
+}
+
+@keyframes rotate__icone {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes loader {
+  0% {
+    opacity: 1;
+    z-index: 2;
+  }
+
+  100% {
+    opacity: 0;
+    z-index: -2;
+  }
+}
+
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slide {
+  0% {
+    width: 80%;
+  }
+
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes slide2 {
+  0% {
+    width: 0;
+  }
+
+  100% {
+    width: 20%;
+  }
+}
+
+@keyframes slide3 {
+  100% {
+    width: 20%;
+  }
+
+  0% {
+    width: 0;
+  }
+}
