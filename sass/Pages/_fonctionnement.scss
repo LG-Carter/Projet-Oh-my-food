@@ -30,6 +30,7 @@
             &:hover {
                 transform: scale(1.1);
                 box-shadow: 2px 3px 10px $color-tertiary;
+                background: $color-primary-light;
 
                 .btn__color {
                     color: $color-primary;
