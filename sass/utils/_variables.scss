@@ -3,6 +3,7 @@ $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
 $color-gradient: linear-gradient(170deg, #FF79DA, #9356DC);
 $color-background: #e6e6e6;
+$color-gradient-lighten: linear-gradient(170deg, lighten(#FF79DA, 10%), lighten(#9356DC, 10%));
 
 $ombre : 0 5px 10px gray;
 
